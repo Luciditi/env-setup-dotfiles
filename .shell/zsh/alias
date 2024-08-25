@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
 ##########ALIASES###############################################################
-alias env-setup="$HOME/env-setup/scripts/env-setup"
+if [[ ! -x "$(command -v env-setup)" ]]; then
+    alias env-setup="$HOME/env-setup/scripts/env-setup"
+fi
 
 ##########NAV ##################################################################
 alias ..1='cd ..'

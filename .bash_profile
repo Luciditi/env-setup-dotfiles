@@ -20,7 +20,7 @@ source "$HOME/.shell/bash/functions/misc"
 #######   COMPLETIONS   ########################################################
 for SCRIPT in "$HOME"/.shell/bash/completions/*; do source "$SCRIPT"; done
 
-#######   SOURCES   ############################################################
+########   SOURCES / VARS  #####################################################
 
 # Set custom bin paths
 PATH=$PATH:$HOME/.bin
@@ -34,6 +34,10 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Export / File Mask
 export PATH
 umask 007
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
 #######   BASH   ###############################################################
 # Get the aliases and functions
 if [ -f "$HOME/.bashrc" ]; then
